@@ -1,96 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🍲 Caldo & Cia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caldo & Cia - Cardápio</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      max-width: 800px;
-      margin: auto;
+      font-family: Arial, sans-serif;
+      background-color: #fdf5e6;
+      color: #3e2e20;
+      max-width: 600px;
+      margin: 0 auto;
       padding: 20px;
-      background: #f9f9f9;
-      color: #333;
     }
-    h1, h2 {
+    h1 {
       text-align: center;
-      color: #b25f37;
+      font-size: 2.2em;
     }
-    .section {
-      margin-bottom: 30px;
+    .emoji {
+      font-size: 1.5em;
+    }
+    .section-title {
+      font-size: 1.5em;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: bold;
     }
     .item {
       display: flex;
-      justify-content: space-between;
-      margin: 10px 0;
-      padding: 10px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      align-items: flex-start;
+      margin-bottom: 20px;
     }
-    .item span {
-      font-size: 16px;
+    .item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
     }
-    .item .description {
-      font-size: 14px;
-      color: #666;
-      margin-top: 5px;
+    .item-info {
+      flex: 1;
     }
-    .button-whatsapp {
+    .item-title {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .item-price {
+      font-weight: bold;
+      float: right;
+    }
+    .whatsapp {
       display: block;
-      width: 100%;
-      background: #25D366;
-      color: white;
-      padding: 15px;
       text-align: center;
-      font-size: 18px;
-      border-radius: 5px;
+      margin: 40px auto 0;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 30px;
       text-decoration: none;
-      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      width: fit-content;
     }
-    .button-whatsapp:hover {
-      background: #128C7E;
+    .whatsapp:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
 <body>
-  <h1>🍲 Caldo & Cia</h1>
+  <h1><span class="emoji">🍲</span> Caldo & Cia</h1>
 
-  <div class="section">
-    <h2>Doces</h2>
-    <div class="item">
-      <span>Pudim de leite condensado (mini)</span><span>R$15</span>
-    </div>
-    <div class="item">
-      <span>Mousse de maracujá</span><span>R$10</span>
-    </div>
-    <div class="item">
-      <span>Torta holandesa</span><span>R$14</span>
-    </div>
-    <div class="item">
-      <span>Bolo de chocolate</span><span>R$10</span>
+  <div class="section-title">Doces</div>
+
+  <div class="item">
+    <img src="https://wandersongranvile.github.io/caldoecia/imagens/pudim.jpg" alt="Pudim">
+    <div class="item-info">
+      <div class="item-title">Pudim de leite condensado <span class="item-price">R$15</span></div>
+      <div>Cremoso, com calda de caramelo artesanal. Sabor irresistível.</div>
     </div>
   </div>
 
-  <div class="section">
-    <h2>Caldos</h2>
-    <div class="item">
-      <span>Caldo de feijão</span><span>R$30</span>
-    </div>
-    <div class="item">
-      <span>Caldo de peixe</span><span>R$30</span>
-      <p class="description">Saboroso caldo à base de peixe fresco, com legumes e temperos especiais, proporcionando um sabor marcante e reconfortante.</p>
-    </div>
-    <div class="item">
-      <span>Caldo de mandioca</span><span>R$30</span>
-      <p class="description">Delicioso caldo cremoso feito com mandioca cozida, carne suína e temperos, trazendo um sabor autêntico e acolhedor.</p>
+  <div class="item">
+    <img src="https://wandersongranvile.github.io/caldoecia/imagens/mousse.jpg" alt="Mousse">
+    <div class="item-info">
+      <div class="item-title">Mousse de maracujá <span class="item-price">R$10</span></div>
+      <div>Mousse leve e aerado, feito com polpa de maracujá fresco.</div>
     </div>
   </div>
 
-  <a href="https://wa.me/5566996535874?text=Olá,+quero+fazer+um+pedido" class="button-whatsapp" target="_blank">
-    Fazer pedido via WhatsApp 📲
-  </a>
+  <div class="item">
+    <img src="https://wandersongranvile.github.io/caldoecia/imagens/torta.jpg" alt="Torta holandesa">
+    <div class="item-info">
+      <div class="item-title">Torta holandesa <span class="item-price">R$14</span></div>
+      <div>Base crocante, creme de baunilha e cobertura de ganache.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="https://wandersongranvile.github.io/caldoecia/imagens/bolo.jpg" alt="Bolo de chocolate">
+    <div class="item-info">
+      <div class="item-title">Bolo de chocolate <span class="item-price">R$10</span></div>
+      <div>Delicioso bolo úmido, coberto com uma rica camada de chocolate.</div>
+    </div>
+  </div>
+
+  <div class="section-title">Caldos</div>
+
+  <div class="item">
+    <img src="https://wandersongranvile.github.io/caldoecia/imagens/feijao.jpg" alt="Caldo de feijão">
+    <div class="item-info">
+      <div class="item-title">Caldo de feijão <span class="item-price">R$30</span></div>
+      <div>Clássico e saboroso, preparado com feijão bem temperado.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="https://wandersongranvile.github.io/caldoecia/imagens/peixe.jpg" alt="Caldo de peixe">
+    <div class="item-info">
+      <div class="item-title">Caldo de peixe <span class="item-price">R$30</span></div>
+      <div>Sopa leve e aromática, com pedaços suculentos de peixe.</div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/5566996535874" target="_blank" class="whatsapp">📞 Fazer Pedido via WhatsApp</a>
+
 </body>
 </html>
-  
