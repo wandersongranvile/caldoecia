@@ -3,70 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Caldo & Cia</title>
+  <title>🍲 Caldo & Cia</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background: #fffbe6; }
-    h1, h2 { text-align: center; color: #b25f37; }
-    .item { display: flex; justify-content: space-between; margin: 8px 0; }
+    body {
+      font-family: 'Arial', sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #b25f37;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      padding: 10px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .item span {
+      font-size: 16px;
+    }
+    .item .description {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
     .button-whatsapp {
-      display: block; width: 100%; background: #25D366; color: white;
-      padding: 15px; text-align: center; font-size: 18px;
-      border-radius: 5px; text-decoration: none; margin-top: 20px;
+      display: block;
+      width: 100%;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .button-whatsapp:hover {
+      background: #128C7E;
     }
   </style>
 </head>
 <body>
   <h1>🍲 Caldo & Cia</h1>
 
-  <h2>Doces</h2>
-  <div class="item"><span>Pudim de leite condensado (mini)</span><span>R$15</span></div>
-  <div class="item"><span>Mousse de maracujá</span><span>R$10</span></div>
-  <div class="item"><span>Torta holandesa</span><span>R$14</span></div>
-  <div class="item"><span>Bolo de chocolate</span><span>R$10</span></div>
+  <div class="section">
+    <h2>Doces</h2>
+    <div class="item">
+      <span>Pudim de leite condensado (mini)</span><span>R$15</span>
+    </div>
+    <div class="item">
+      <span>Mousse de maracujá</span><span>R$10</span>
+    </div>
+    <div class="item">
+      <span>Torta holandesa</span><span>R$14</span>
+    </div>
+    <div class="item">
+      <span>Bolo de chocolate</span><span>R$10</span>
+    </div>
+  </div>
 
-  <h2>Caldos</h2>
-  <div class="item"><span>Caldo de feijão</span></div>
-  <div class="item"><span>Caldo de peixe</span></div>
-  <div class="item"><span>Caldo de mandioca</span></div>
-
-  <a href="https://wa.me/5566996535874?text=Olá,+quero+fazer+um+pedido" class="button-whatsapp" target="_blank">
-    Fazer pedido via WhatsApp 📲
-  </a>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Caldo & Cia</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background: #fffbe6; }
-    h1, h2 { text-align: center; color: #b25f37; }
-    .item { display: flex; justify-content: space-between; margin: 8px 0; }
-    .button-whatsapp {
-      display: block; width: 100%; background: #25D366; color: white;
-      padding: 15px; text-align: center; font-size: 18px;
-      border-radius: 5px; text-decoration: none; margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <h1>🍲 Caldo & Cia</h1>
-
-  <h2>Doces</h2>
-  <div class="item"><span>Pudim de leite condensado (mini)</span><span>R$15</span></div>
-  <div class="item"><span>Mousse de maracujá</span><span>R$10</span></div>
-  <div class="item"><span>Torta holandesa</span><span>R$14</span></div>
-  <div class="item"><span>Bolo de chocolate</span><span>R$10</span></div>
-
-  <h2>Caldos</h2>
-  <div class="item"><span>Caldo de feijão</span></div>
-  <div class="item"><span>Caldo de peixe</span></div>
-  <div class="item"><span>Caldo de mandioca</span></div>
+  <div class="section">
+    <h2>Caldos</h2>
+    <div class="item">
+      <span>Caldo de feijão</span><span>R$30</span>
+    </div>
+    <div class="item">
+      <span>Caldo de peixe</span><span>R$30</span>
+      <p class="description">Saboroso caldo à base de peixe fresco, com legumes e temperos especiais, proporcionando um sabor marcante e reconfortante.</p>
+    </div>
+    <div class="item">
+      <span>Caldo de mandioca</span><span>R$30</span>
+      <p class="description">Delicioso caldo cremoso feito com mandioca cozida, carne suína e temperos, trazendo um sabor autêntico e acolhedor.</p>
+    </div>
+  </div>
 
   <a href="https://wa.me/5566996535874?text=Olá,+quero+fazer+um+pedido" class="button-whatsapp" target="_blank">
     Fazer pedido via WhatsApp 📲
   </a>
 </body>
 </html>
+Atualizar cardápio com descrições e estilo melhorado
